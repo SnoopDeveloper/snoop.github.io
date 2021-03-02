@@ -44,6 +44,10 @@
     <script>
         var rythm;
         var initialized = false;
+		setTimeout(function(){
+		$(".overlay").addClass("hidden");
+		}, 5);
+		
 
         var init_rythm = () => {
             rythm = new Rythm();
