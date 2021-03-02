@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+>
+<head>
+    <style>
+		body {
+			transition: background-color 0s;
+		}
+	</style>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="../code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Snoop#6960</title>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/222120497654005760/a93e916740e55df82d5f2108275e697a.webp">
+
+</head>
+<body>
+    <script>
+		var colors = ["black,white"]
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+        }
+		var i = getRandomInt(0, colors.length);
+        document.body.style.backgroundColor = colors[i];
+		window.setInterval(function(){
+			document.body.style.backgroundColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 3000);
+    </script> <!-- rainbow -->
+    
+
+    <div class="container">
+        <div class="row d-flex align-items-center min-vh-100">
+            <div class="col-6 mx-auto">
+                <div class="jumbotron">
+                    <h1 class="display-4">Snoop <div class="spinner-grow float-right" style="width: 3rem; height: 3rem;" role="status"> <span class="sr-only"></span></div></h1>
+                    <p class="lead">I know  HTML, PHP, JavaScript and intermediate at Lua. | Also some-what decent at c sharp / c++</p>
+                    <hr class="my-4">
+                    <p class="text-muted">My Discord is Snoop#6960</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="lead py-4 bg-dark text-white-50">
+        <div class="container text-center">
+        Copyright (C) 2021 Snoop.vip
+    </div>
+    </footer>
+</body>
+
+</html>
