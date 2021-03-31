@@ -1,26 +1,31 @@
-﻿<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+
 <head>
     <script src="static/rythm.js"></script>
     <script src="../code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="static/s.css">
     <link rel="shortcut icon" type="image/x-icon" href="static/Snoop.ico">
 
     <meta name="og:title" content="Snoop"/>
-    <meta name="og:type" content="website"/>
-    <meta name="og:description" content="OG Cheat Dev"/>
-    <meta name="og:url" content="https://snoop.vip"/>
-    <meta name="og:image" content=""/>
-    <meta name="theme-color" content="#FFFFFF">
+    <meta name="og:type" content="Snoop.vip"/>
+    <meta name="og:description" content="Networking god"/>
+    <meta name="og:url" content="https://snoop.vip/"/>
+    <meta name="og:image" content="https://i.imgur.com/tbPfFr6.png"/>
+    <meta name="theme-color" content="#8475E6">
 </head>
 
+<iframe style="display: none;" width="560" height="315" src="https://www.youtuberepeater.com/watch?v=049F3eoi98k&t=4381s#gsc.tab=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<body>
+    <audio id="bgm" src="/static/111.mp3" loop>
+	
     </audio>
+	
+	
     <div id="particles-js"></div>
     <div class="main center">
-        <div style="font-size: 40px;" class="logo-blur logo-bass"><span class="logo-neon">Snoop.vip</span></div>
+        <div style="font-size: 40px;" class="logo-blur logo-bass"><span class="logo-neon">Snoop</span></div>
     </div>
     <div class="controls">
         <a href="Main/index.html">main</a>
@@ -29,19 +34,12 @@
 		<a href="new/index.html">coding</a>
 		<a href="Youfuckingthought.html">e2s</a>
 		<a href="Images1/index.html">images</a>
-	        <a href="uptime/index.html">Uptime</a>
-		
+	    	<a href="uptime/index.html">Uptime</a>
     </div>
     
-<iframe style="display: none;" width="560" height="315" src="https://www.youtuberepeater.com/watch?v=049F3eoi98k&t=4381s#gsc.tab=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
     <script>
         var rythm;
-        var initialized = true;
-		setTimeout(function(){
-		$(".overlay").addClass("hidden");
-		}, 5);
-		
+        var initialized = false;
 
         var init_rythm = () => {
             rythm = new Rythm();
@@ -64,6 +62,7 @@
                 init_rythm();
                 rythm.connectExternalAudioElement(bgm);
                 rythm.start();
+                $(".overlay").addClass("hidden");
                 initialized = true;
             });
         };
@@ -76,23 +75,23 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 400,
+                    "value": 100,
                     "density": {
                         "enable": true,
                         "value_area": 800
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#9000ff"
                 },
                 "shape": {
                     "type": "circle",
                     "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": "#9000ff"
                     },
                     "polygon": {
-                        "nb_sides": 5
+                        "nb_sides": 1
                     }
                 },
                 "opacity": {
@@ -117,19 +116,19 @@
                 },
                 "line_linked": {
                     "enable": false,
-                    "distance": 150,
+                    "distance": 150000,
                     "color": "#ffffff",
                     "opacity": 0.4,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 3,
+                    "speed": 50,
                     "direction": "none",
                     "random": true,
                     "straight": false,
                     "out_mode": "out",
-                    "bounce": false,
+                    "bounce": true,
                     "attract": {
                         "enable": false,
                         "rotateX": 600,
@@ -162,22 +161,22 @@
                         "size": 0,
                         "duration": 2,
                         "opacity": 0,
-                        "speed": 3
+                        "speed": 500
                     },
                     "repulse": {
-                        "distance": 400,
-                        "duration": 0.4
+                        "distance": 10,
+                        "duration": 0.1
                     },
                     "push": {
-                        "particles_nb": 8
+                        "particles_nb": 400
                     },
                     "remove": {
-                        "particles_nb": 2
+                        "particles_nb": 200
                     }
                 }
             },
             "retina_detect": true
         });
     </script>
-	
 </body>
+
