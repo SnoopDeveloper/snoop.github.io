@@ -59,7 +59,9 @@ const LogoSplash = ({ success }) => {
       className="pulse"
       layoutId="logo"
     >
-      <im id="logo-path" width="250px src = "https://deflected.io/source/myclient/deflectedwhite.png"
+      <motion.path 
+      id="logo-path" 
+      src = "https://deflected.io/source/myclient/deflectedwhite.png"
        
         
         fill="#ffffff"
