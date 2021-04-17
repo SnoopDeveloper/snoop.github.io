@@ -1,0 +1,175 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 22px 0 10px 0;
+}
+h2 {
+  color: #686868;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.background,
+h1,
+h2 {
+  transition: all ease 4.3s;
+}
+
+.background {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background section {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -110px;
+}
+
+.background section .content {
+  position: relative;
+  width: 100%;
+  max-width: 385px;
+  margin-left: 35px;
+}
+
+.background section #captcha {
+  margin-top: 15px;
+}
+
+.background .captcha-container {
+  position: absolute;
+  bottom: -110px;
+}
+
+.background footer {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.background footer a {
+  color: #000;
+  font-weight: 600;
+  transition: all ease 0.3s;
+}
+
+.pulse {
+  animation-name: stretch;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.dark {
+  background: #3051d3;
+}
+
+.dark h1 {
+  color: #fff;
+}
+.dark h2 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark .background footer,
+.dark .background footer a {
+  color: #fff;
+}
+
+@keyframes stretch {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  h1 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+  }
+
+  h2 {
+    color: #686868;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .background section {
+    padding: 0 25px;
+    margin-top: -250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background section .content {
+    max-width: 385px;
+    margin: 25px 0 0 0;
+  }
+
+  .background section .flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background .captcha-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .background footer {
+    bottom: 125px;
+  }
+}
