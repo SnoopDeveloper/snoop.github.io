@@ -2950,7 +2950,7 @@ const App = () => {
           )}
         </section>
         <footer>
-          Sensor Mitigation by <a href="https://fluxcdn.com">FluxCDN.com</a>
+          Checking Your browser please wait 5 seconds ddos protected by <a href="https://deflected.io/">deflected.io</a>
         </footer>
       </main>
     </AnimateSharedLayout>
