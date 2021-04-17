@@ -146,7 +146,7 @@ const App = () => {
           )}
         </section>
         <footer>
-          Checking Your browser please wait 5 seconds ddos protected by <a href="https://deflected.io/">deflected.io</a>
+          Checking Your browser... protected by <a href="https://deflected.io/">deflected.io</a>
         </footer>
       </main>
     </AnimateSharedLayout>
